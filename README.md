@@ -49,9 +49,9 @@ $$
     v_{Normal,x} & v_{Normal,y} & v_{Normal,z}
   \end{bmatrix}  = 
   \begin{bmatrix}
-  u_{11} & u_{12} & u_{13}\\\ u_{21} & u_{22} & u_{23}\\\ u_{31} & u_{32} & u_{33}
+  u_{11} & u_{12} & u_{13}\\\\ u_{21} & u_{22} & u_{23}\\\\ u_{31} & u_{32} & u_{33}
   \end{bmatrix} \times
-  \begin{bmatrix}a_{Normal,x}\\\ a_{Normal,y}\\\ a_{Normal,z}\end{bmatrix}
+  \begin{bmatrix}a_{Normal,x}\\\\ a_{Normal,y}\\\\ a_{Normal,z}\end{bmatrix}
 \tag{1}
 $$
 //物体位置坐标转换到世界坐标系  
