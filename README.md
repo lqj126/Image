@@ -8,8 +8,7 @@
 C:/Code/Lotus/Sandbox/assets/models/nanosuit/nanosuit.obj
 C:/Code/Lotus/Sandbox/assets/models/backpack/backpack.obj
 
-![07](https://github.com/lqj126/Image/blob/main/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E5%9B%BE%E7%89%87/%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E7%89%87/7.png)
-![04](https://github.com/lqj126/Image/blob/main/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E5%9B%BE%E7%89%87/%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E7%89%87/4.png)
+
 
 # 冯光照模型
 ## 顶点着色器
@@ -50,9 +49,9 @@ $$
     v_{Normal,x} & v_{Normal,y} & v_{Normal,z}
   \end{bmatrix}  = 
   \begin{bmatrix}
-  u_{11} & u_{12} & u_{13}\\ u_{21} & u_{22} & u_{23}\\ u_{31} & u_{32} & u_{33}
+  u_{11} & u_{12} & u_{13}\\\ u_{21} & u_{22} & u_{23}\\\ u_{31} & u_{32} & u_{33}
   \end{bmatrix} \times
-  \begin{bmatrix}a_{Normal,x}\\a_{Normal,y}\\a_{Normal,z}\end{bmatrix}
+  \begin{bmatrix}a_{Normal,x}\\\ a_{Normal,y}\\\ a_{Normal,z}\end{bmatrix}
 \tag{1}
 $$
 //物体位置坐标转换到世界坐标系  
@@ -501,3 +500,6 @@ $$\begin{aligned} \text{numerator} &= D_{GGX}(N, H, \text{roughness}) \times G_{
 最终颜色：
 
 $$\begin{aligned} \text{Lo} &= \sum_{i=0}^{3}(\frac{\text{kD} \times albedo}{\pi} + \text{specular}) \times \text{radiance} \times \max(N \cdot L, 0) \\ \text{ambient} &= 0.03 \times albedo \times ao \\ \text{color} &= \text{ambient} + \text{Lo} \\ \text{color} &= \frac{\text{color}}{\text{color} + 1} \\ \text{color} &= \text{pow(color, vec3(1.0/2.2))} \\ \text{FragColor} &= \begin{bmatrix} \text{color} \\ 1.0 \end{bmatrix} \end{aligned}$$
+
+
+[def]: https://github.com/lqj126/Image/blob/main/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E5%9B%BE%E7%89%87/%E7%94%9F%E6%88%90%E7%9A%84%E5%9B%BE%E7%89%87/7.png
